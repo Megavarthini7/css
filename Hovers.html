@@ -1,4 +1,5 @@
-<html>
+
+                <html>
     <head>
         <title>Id Card</title>
         <style>
@@ -12,7 +13,7 @@
             }
             .card{
                 background-color:whitesmoke;
-                width:300px;
+                width:400px;
                 padding:20px;
                 text-align:center;
                 border-radius: 18px;
@@ -20,15 +21,45 @@
                 transition:transform 0.5s;
 
             }
-            .card{
+            .card :hover{
                 transform:scale(1.05);
+            }
+            .card img{
+                width: 120px;
+                height:120px;
+                object-fit:cover;
+                border-radius:25%;
+                border: 4px debug-black;
+                margin-bottom:15px;
+            }
+            .card h2{
+                color: pink;
+                margin:10px 0;
+            }
+            .card p{
+                color:#777;
+                font size:18px;
+            }
+            .card button{
+                padding:10px 20px ;
+                border: none;
+                background:orange;
+                color:rgb(167, 11,167);
+                font-size: 16px;
+                border-radius: 25px;
+                cursor:pointer;
+                transition:background 0.5s;
+            }
+            .card button:hover{
+                background:#434;
             }
 
         </style>
     </head>
     <body>
         <div class="card">
-            <img src="mec.jpeg"/>
+            <img src= "mec.jpeg"/>
+            <div class="card">
         <h2>Megavarthini S</h2>
         <p>Web Technical Developer</p>
         <button>Click</button></div>
